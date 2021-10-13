@@ -23,3 +23,6 @@ jobs:
           name: SendEmail
           runtime: go113
           region: us-east4
+
+      - name: Display URL
+        run: echo GCP function deployed to "${{ steps.deploy.outputs.url }}"
