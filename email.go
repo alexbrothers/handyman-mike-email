@@ -20,5 +20,5 @@ func SendEmail(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprint(w, "Hello, World!")
 		return
 	}
-	fmt.Fprintf(w, "Hello, %s!", html.EscapeString(d.Name))
+	fmt.Fprintf(w, "Hello, %s!!!", html.EscapeString(d.Name))
 }
